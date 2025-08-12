@@ -30,6 +30,10 @@ Reload target time
 ```bash
 ./reload.sh
 ```
+## Uninstall
+```bash
+./uninstall.sh
+```
 ## Preview
 ### Notification
 ![image](./notification-screenshot.png)
