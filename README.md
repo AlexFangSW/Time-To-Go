@@ -9,13 +9,12 @@ to the correct path of [time_to_go.sh](./time_to_go.sh)
 [Service]
 ExecStart=%h/<YOUR_PATH>/time_to_go.sh
 ```
-projects/Time-To-Go
 Than run `./setup.sh`
 ```bash
 ./setup.sh
 ```
 
-## Set notification time
+## Change notification time
 Set the target time for the notification to fire at the top of [time_to_go.sh](./time_to_go.sh).
 ```bash
 #######################################
