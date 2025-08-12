@@ -2,14 +2,14 @@
 A countdown timer that fires system notification with `notify-send`
 to tell that its time to go home.
 
-## Installation
+## Prerequisite
 Change `ExecStart` in [time_to_go_notifier.service](./time_to_go_notifier.service)
 to the correct path of [time_to_go.sh](./time_to_go.sh)
 ```
 [Service]
 ExecStart=%h/<YOUR_PATH>/time_to_go.sh
 ```
-Than run `./setup.sh`
+## Installation
 ```bash
 ./setup.sh
 ```
