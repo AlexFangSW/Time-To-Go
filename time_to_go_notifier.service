@@ -1,0 +1,8 @@
+[Unit]
+Description=Time To Go Notification
+
+[Service]
+ExecStart=%h/tools/time-to-go/time_to_go.sh
+
+[Install]
+WantedBy=multi-user.target
