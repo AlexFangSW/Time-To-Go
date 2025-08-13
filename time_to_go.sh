@@ -4,17 +4,16 @@
 # CONFIGURATION — SET YOUR TIME HERE
 #######################################
 TARGET_HOUR=18   # Hour (0–23)
-TARGET_MIN=25    # Minute (0–59)
+TARGET_MIN=0    # Minute (0–59)
 TARGET_SEC=0     # Second (0–59)
 #######################################
 
 # Get current time
-CURRENT_HOUR=$(date +%H)
-CURRENT_MIN=$(date +%M)
-CURRENT_SEC=$(date +%S)
+CURRENT_HOUR=$((10#$(date +%H)))
+CURRENT_MIN=$((10#$(date +%M)))
+CURRENT_SEC=$((10#$(date +%S)))
 
-# Convert to total seconds
-CURRENT_TOTAL=$(( CURRENT_HOUR * 3600 + CURRENT_MIN * 60 + CURRENT_SEC ))
+CURRENT_TOTAL=$(( $CURRENT_HOUR * 3600 + $CURRENT_MIN * 60 + $CURRENT_SEC ))
 TARGET_TOTAL=$(( TARGET_HOUR * 3600 + TARGET_MIN * 60 + TARGET_SEC ))
 
 if [ "$CURRENT_TOTAL" -lt "$TARGET_TOTAL" ]; then
