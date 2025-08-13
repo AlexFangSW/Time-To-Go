@@ -2,7 +2,7 @@
 Description=Time To Go Notification
 
 [Service]
-ExecStart=%h/<YOUR_PATH>/time_to_go.sh
+ExecStart=/home/alex/projects/Time-To-Go/time_to_go.sh
 
 [Install]
 WantedBy=multi-user.target
